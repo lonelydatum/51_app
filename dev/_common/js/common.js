@@ -59,14 +59,14 @@ function slider(read=2){
 	return tl
 }
 
-function standard(phoneDuration=.26){	
+function standard(phoneDuration=.29){	
 	const tl = init()	
 	// return
 	tl.add("phone", "+=1")
 	tl.to(".logo1", {duration:phoneDuration*.8, opacity:0}, "phone")
 	tl.to(".phone", {duration:phoneDuration, y:0, x:0}, "phone")
 	tl.to(".phone_dark", {duration:phoneDuration, opacity:0})
-	tl.add(slider(), "+=.3")
+	tl.add(slider(), "+=.1")
 	tl.to(".f1", {duration:.26, opacity:0}, "+=1.4")
 
 	tl.add(fader(".t2", read.betOnNFL))
@@ -129,7 +129,7 @@ function b_320x50(){
 }
 
 function b_728x90(text1){	
-	standard()
+	standard(.4)
 }
 
 export { init, b_160x600, b_300x250, b_300x600, b_320x50, b_728x90, b_970x250, b_1000x700,b_970x70, origin }

@@ -64,7 +64,7 @@ function slider() {
 }
 
 function standard() {
-	var phoneDuration = arguments.length <= 0 || arguments[0] === undefined ? .26 : arguments[0];
+	var phoneDuration = arguments.length <= 0 || arguments[0] === undefined ? .29 : arguments[0];
 
 	var tl = init();
 	// return
@@ -72,7 +72,7 @@ function standard() {
 	tl.to(".logo1", { duration: phoneDuration * .8, opacity: 0 }, "phone");
 	tl.to(".phone", { duration: phoneDuration, y: 0, x: 0 }, "phone");
 	tl.to(".phone_dark", { duration: phoneDuration, opacity: 0 });
-	tl.add(slider(), "+=.3");
+	tl.add(slider(), "+=.1");
 	tl.to(".f1", { duration: .26, opacity: 0 }, "+=1.4");
 
 	tl.add(fader(".t2", read.betOnNFL));
@@ -129,7 +129,7 @@ function b_320x50() {
 }
 
 function b_728x90(text1) {
-	standard();
+	standard(.4);
 }
 
 exports.init = init;
