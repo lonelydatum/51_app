@@ -1,0 +1,9 @@
+@import '../../../_common/styles/b1000x700.scss';
+
+
+
+
+.phone{
+	@include pos-scale(183, 0, .5);
+}
+
