@@ -232,11 +232,11 @@ canvas, .text, .frame, .outline, img {
 }
 
 #olg {
-  width: 95px;
-  height: 60px;
-  -webkit-transform: translate(0px, 428px);
-  -ms-transform: translate(0px, 428px);
-  transform: translate(0px, 428px);
+  width: 100px;
+  height: 80px;
+  -webkit-transform: translate(0px, 254px);
+  -ms-transform: translate(0px, 254px);
+  transform: translate(0px, 254px);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   -webkit-perspective: 1000px;
