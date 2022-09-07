@@ -1,0 +1,35 @@
+@import '../../../_common/styles/b300x250.scss';
+
+
+#banner{
+ width: 320px;
+ height: 480px; 
+}
+
+
+
+#olg{
+	width: 95px;
+	height: 60px;
+	@include pos(0, 428);
+}
+
+
+
+#legalBtn{	
+	@include pos(260, 434);	
+	width: 60px;
+	
+}
+
+.t1a{
+	// @include pos-scale(-130, 30, .5);
+}
+
+.t1b{
+	// @include pos-scale(130, -30, .5);
+}
+
+.phone{
+	@include pos-scale(0, -70, .5);
+}
