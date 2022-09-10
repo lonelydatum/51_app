@@ -110,11 +110,18 @@ function b_970x70() {
 }
 
 function b_320x50() {
+	var phoneDuration = arguments.length <= 0 || arguments[0] === undefined ? .29 : arguments[0];
+
 	var tl = init();
 
+	// tl.add("phone", "+=1")
+	// tl.to(".logo1", {duration:.4, opacity:0}, "phone")
+	// tl.to(".phone", {duration:.4, y:0, x:0}, "phone")
+
 	tl.add("phone", "+=1");
-	tl.to(".logo1", { duration: .4, opacity: 0 }, "phone");
-	tl.to(".phone", { duration: .4, y: 0, x: 0 }, "phone");
+	tl.to(".logo1", { duration: phoneDuration * .8, opacity: 0 }, "phone");
+	tl.to(".phone", { duration: phoneDuration, y: 0, x: 0 }, "phone");
+	tl.to(".phone_dark", { duration: phoneDuration, opacity: 0 });
 
 	tl.from(".t1a", { duration: .4, opacity: 0 }, "phone+=.2");
 
